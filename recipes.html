@@ -1,37 +1,173 @@
-<!-- Jerk o’ Lantern Hot Sauce Recipe -->
-<div class="recipe">
-  <h2>🎃 Jerk o’ Lantern Hot Sauce</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recipes | Butchart’s Burners</title>
 
-  <div class="recipe-gallery">
-    <img src="https://i.postimg.cc/DZ9GT499/Your-paragraph-text.png" alt="Jerk o’ Lantern Hot Sauce Image 1">
-    <img src="https://i.postimg.cc/B6rF01W3/IMG-6718.jpg" alt="Jerk o’ Lantern Hot Sauce Image 2">
-    <img src="https://i.postimg.cc/FRMS4Jt4/IMG-6719.jpg" alt="Jerk o’ Lantern Hot Sauce Image 3">
-  </div>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #fff8f0;
+      color: #333;
+    }
 
-  <p>
-    The <strong>Jerk o’ Lantern</strong> hot sauce is a fiery fusion of island flavor and autumn spice. 
-    Inspired by traditional Jamaican jerk seasoning and pumpkin pie spice blends, 
-    this sauce balances heat and warmth with rich, complex undertones. 
-    I made this using freshly harvested Scotch Bonnet peppers — including Papa Dreadie Select and Butterscotch Ghost Scorpion — 
-    along with pumpkin, garlic, onion, and a blend of cloves, allspice, nutmeg, and cinnamon.
-  </p>
+    header {
+      background-color: #b22222;
+      color: white;
+      padding: 1em;
+      text-align: center;
+    }
 
-  <div class="flavor-profile">
-    <h3>Flavor Profile</h3>
-    <ul>
-      <li><strong>Heat Level:</strong> Medium-High 🔥🔥🔥</li>
-      <li><strong>Flavor Notes:</strong> Sweet pumpkin warmth, jerk spice kick, and fruity bonnet heat</li>
-      <li><strong>Inspiration:</strong> Jamaican jerk & holiday pumpkin spice</li>
-      <li><strong>Best Pairings:</strong> Grilled chicken, roasted vegetables, or a festive holiday feast</li>
-    </ul>
-  </div>
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
 
-  <div class="ingredients">
-    <h3>Ingredients</h3>
+    /* Navigation bar */
+    nav {
+      background-color: #8b1a1a;
+      text-align: center;
+      padding: 0.5em 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1em;
+      font-weight: bold;
+      padding: 0.5em 1em;
+      border-radius: 6px;
+    }
+
+    nav a:hover {
+      background-color: #b22222;
+    }
+
+    /* Recipe Section Styling */
+    .recipe {
+      max-width: 800px;
+      margin: 3em auto;
+      padding: 1.5em;
+      background: #fff8f0;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .recipe-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 1em;
+    }
+
+    .recipe-gallery img {
+      width: 32%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .recipe h2 {
+      color: #b22222;
+      text-align: center;
+      margin-bottom: 1em;
+    }
+
+    .flavor-profile, .ingredients {
+      background: #f8e6e6;
+      padding: 1em;
+      border-radius: 8px;
+      margin-top: 1em;
+    }
+
+    .flavor-profile h3, .ingredients h3 {
+      color: #b22222;
+      margin-top: 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1em;
+      background-color: #333;
+      color: white;
+      margin-top: 3em;
+    }
+
+    @media (max-width: 600px) {
+      .recipe-gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .recipe-gallery img {
+        width: 90%;
+      }
+
+      nav a {
+        display: block;
+        margin: 0.3em 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Butchart’s Burners</h1>
+    <p>Our Hot Sauce Creations</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="fermentation.html">Fermentation</a>
+    <a href="recipes.html">Recipes</a>
+    <a href="about.html">About Us</a>
+  </nav>
+
+  <!-- Jerk o’ Lantern Hot Sauce Recipe -->
+  <div class="recipe">
+    <h2>🎃 Jerk o’ Lantern Hot Sauce</h2>
+
+    <div class="recipe-gallery">
+      <img src="https://i.postimg.cc/DZ9GT499/Your-paragraph-text.png" alt="Jerk o’ Lantern Hot Sauce Image 1">
+      <img src="https://i.postimg.cc/B6rF01W3/IMG-6718.jpg" alt="Jerk o’ Lantern Hot Sauce Image 2">
+      <img src="https://i.postimg.cc/FRMS4Jt4/IMG-6719.jpg" alt="Jerk o’ Lantern Hot Sauce Image 3">
+    </div>
+
     <p>
-      Apple Cider Vinegar, Papa Dreadie Select Scotch Bonnet, Pumpkin BBG7, KSLS, Butterscotch Ghost Scorpion, 
-      TE Yellow Ghost Scorpion, Jesse's Moranga Peach XL, Jesse's Moranga Orange XL, 
-      Garlic, Onion, Allspice, Cloves, Nutmeg, Ginger, Cinnamon, Sugar, Salt.
+      The <strong>Jerk o’ Lantern</strong> hot sauce is a fiery fusion of island flavor and autumn spice. 
+      Inspired by traditional Jamaican jerk seasoning and pumpkin pie spice blends, 
+      this sauce balances heat and warmth with rich, complex undertones. 
+      I made this using freshly harvested Scotch Bonnet peppers — including Papa Dreadie Select and Butterscotch Ghost Scorpion — 
+      along with pumpkin, garlic, onion, and a blend of cloves, allspice, nutmeg, and cinnamon.
     </p>
+
+    <div class="flavor-profile">
+      <h3>Flavor Profile</h3>
+      <ul>
+        <li><strong>Heat Level:</strong> Medium-High 🔥🔥🔥</li>
+        <li><strong>Flavor Notes:</strong> Sweet pumpkin warmth, jerk spice kick, and fruity bonnet heat</li>
+        <li><strong>Inspiration:</strong> Jamaican jerk & holiday pumpkin spice</li>
+        <li><strong>Best Pairings:</strong> Grilled chicken, roasted vegetables, or a festive holiday feast</li>
+      </ul>
+    </div>
+
+    <div class="ingredients">
+      <h3>Ingredients</h3>
+      <p>
+        Apple Cider Vinegar, Papa Dreadie Select Scotch Bonnet, Pumpkin BBG7, KSLS, Butterscotch Ghost Scorpion, 
+        TE Yellow Ghost Scorpion, Jesse's Moranga Peach XL, Jesse's Moranga Orange XL, 
+        Garlic, Onion, Allspice, Cloves, Nutmeg, Ginger, Cinnamon, Sugar, Salt.
+      </p>
+    </div>
   </div>
-</div>
+
+  <footer>
+    &copy; 2025 Butchart’s Burners. All rights reserved.
+  </footer>
+
+</body>
+</html>
